@@ -60,7 +60,7 @@ resource "aws_ecr_repository" "ember" {
   name = "ember-sample-fe"
 }
 
-resource "aws_ecr_repository_policy" "foopolicy" {
+resource "aws_ecr_repository_policy" "ember-sample-dev" {
   repository = "${aws_ecr_repository.ember.name}"
 
   policy = <<EOF
